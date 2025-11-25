@@ -11,6 +11,4 @@ print("消费pay,余额：", money)
 
 count = 100
 
-"""
-print("int+str", count+"1")   //  报错
-"""
+# print("int+str", count+"1")   //  报错
