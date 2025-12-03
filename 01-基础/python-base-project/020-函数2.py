@@ -3,19 +3,29 @@
 """
 
 
-def my_fun(var=None):
-    if var is None:
-        print("var 传入了 None")
-        return
-    print("python函数学习")
-    print(f"{var}")
+if 0:
+    def my_fun(var=None):
+        if var is None:
+            print("var 传入了 None")
+            return
+        print("python函数学习")
+        print(f"{var}")
 
 
-def welcome():
-    print("欢迎来到中牟县\n这里是我的故乡")
+    my_fun("彭于晏")
+    my_fun()
+    my_fun('')
+    print(1)
 
 
-welcome()
+def verify(temp):
+    if temp >= 37.5:
+        print("请尽快就医")
+    else:
+        print("欢迎光临")
 
 
-my_fun("彭于晏")
+verify(36)
+verify(38)
+
+
