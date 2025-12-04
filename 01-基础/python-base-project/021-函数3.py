@@ -4,6 +4,11 @@
 
 
 def my_add(num1, num2):
+    """
+    :param num1:
+    :param num2:
+    :return:
+    """
     return num1+num2
 
 
