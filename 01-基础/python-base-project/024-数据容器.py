@@ -14,5 +14,7 @@ usersInfo[0] = "彭yu晏"
 # 遍历
 for user in usersInfo:
     print(f"用户名: {user}")
+# 长度
+print(f"list.length: {len(usersInfo)}")
 
 
