@@ -20,7 +20,7 @@ print(f"追加元素到尾部{usersInfo}")
 usersInfo.extend(["567", "007"])
 print(f"追加一批元素{usersInfo}")
 
-# 删除 ① del列表[下表]  ② 列表.pop(下表)
+# 删除 ① del列表[下标]  ② 列表.pop(下标)
 usersInfo2 = ["彭于晏", "胡歌", "周星驰", "大B哥", "吴彦祖", "周慧敏", "王祖贤", "张曼玉"]
 del usersInfo2[0]
 print(f"删除①{usersInfo2}")
