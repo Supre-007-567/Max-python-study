@@ -1,0 +1,4 @@
+Hello,this is a test file for my Python learning.
+I have a passion for Python.
+I think therefore I'm
+Where there is a way,there is a well
