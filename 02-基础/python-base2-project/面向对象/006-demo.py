@@ -6,7 +6,7 @@
 class Phone:
     __is_5g_enable = None
 
-    def __init__(self,is_5g_enable=False):
+    def __init__(self, is_5g_enable=False):
         self.__is_5g_enable = is_5g_enable
 
     def __check_5g(self):
