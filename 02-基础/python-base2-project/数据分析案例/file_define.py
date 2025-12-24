@@ -8,7 +8,7 @@ from data_define import Record
 # 先定义一个抽象类用来做顶层设计，确定有哪些功能需要子类来完成
 class FileReader:
 
-    def read_data(self)->list[Record]:
+    def read_data(self) -> list[Record]:
         """
         读取文件数据，将读到的数据转换成 Record 对象
         将他们都封装到 list 内返回
@@ -31,10 +31,8 @@ class TextFileReader(FileReader):
             data_list = line.split(',')  # 按逗号分割
             record = Record(data_list[0], data_list[1], int(data_list[2]), data_list[3])
             record_list.append(record)
-            # print('record', type(record))
 
         f.close()
-        # print(record_list)
         return record_list
 
 
@@ -49,12 +47,10 @@ class JsonFileReader(FileReader):
         record_list: list[Record] = []
         for line in f.readlines():
             line = line.strip()
-            line_dict = json.loads(line)
+            line_dict = json.loads(line)  # json转python
             record = Record(line_dict["date"], line_dict["order_id"], int(line_dict["money"]), line_dict["province"])
-            print(record)
-            # record_list.append(record)
+            record_list.append(record)
         f.close()
-        # print(record_list)
         return record_list
 
 
